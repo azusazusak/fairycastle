@@ -1,0 +1,36 @@
+// This file contains the variables for CSS.
+
+$color_1: #46B4DB;
+$color_2: #5A9E72;
+$color_3: #E8C547;
+$color_4: #F26989;
+$color_5: #BBBDC9;
+$color_6: #484B5B;
+$white: #ffffff;
+$black: #000000;
+
+//for mediaquery
+$width_mb: 481px;
+$width_pc: 960px;
+$width_wide: 1680px;
+
+$font_1: 'Nunito', sans-serif; //Body font
+$font_2: 'Ubuntu', sans-serif; //Header font
+
+$fontSize_pc: 110%;
+$fontSize_mb: 100%;
+$fontSize_min: 90%;
+$fontSize_h1: 2rem;
+$fontSize_h2: 1.7rem;
+$fontSize_h3: 1.4rem;
+$fontSize_h4: 1.2rem;
+$fontSize_h5: 1.2rem;
+
+$marginBottom_h1: 0;
+$marginBottom_h2: 0;
+$marginBottom_h3: 0;
+$marginBottom_h4: 0;
+$marginBottom_h5: 0;
+
+$transition_hover: all .1s linear;
+

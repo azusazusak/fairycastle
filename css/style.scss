@@ -1,0 +1,998 @@
+@import "variables"; //refer to "_variables.scss" file
+
+#login, #register {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    header {
+        margin-top: 10vh;
+        margin-bottom: 7vh;
+        .handle {
+            max-width: 700px;
+            h1 {
+                color: $white;
+                text-shadow: 0.1rem 0.1rem 0.1rem $black;
+            }
+        }
+    }
+    .inputForm {
+        margin-bottom: 10vh;
+        .handle {
+            max-width: 700px;
+            .alertMsg {
+                margin-bottom: 5vh;
+                p {
+                    font-weight: 900;
+                    font-size: 1.4rem;
+                    color: $color_3;
+                    text-shadow: 0.05rem 0.05rem 0.05rem $black;
+                }
+            }
+        }
+        form {
+            input[type="text"], input[type="email"], input[type="password"]{
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            input:focus {
+                border: 2px solid $color_3;
+                outline: 0;
+            }
+            input[type="submit"]:focus {
+                border: 0.1rem outset $color_4;
+                outline: 0;
+            }
+            input[type="submit"]:hover {
+                border: 0.1rem outset $color_2;
+                outline: 0;
+            }
+            .submit {
+                margin-top: 5vh;
+            }
+            .error {
+                .errorMsg {
+                    p {
+                        font-size: 1.2rem;
+                        color: $white;
+                        font-weight: bold;
+                        text-shadow: 0.1rem 0.1rem 0px $color_4;
+                    }
+                }
+            }
+            input[type="password"].unmatched {
+                background-color: $color_4;
+            }
+        }
+        .notice {
+            margin-top: 5vh;
+            p {
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-shadow: 0.05rem 0.05rem 0.05rem $black;
+                a {
+                    font-family: $font_2;
+                    font-size: 1.4rem;
+                    color: $white;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
+                }
+            }
+        }
+    }
+}
+
+#home {
+    .navigation {
+        margin: 0;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        background-color: $color_1;      
+        .handle {            
+            .logo {
+                a {
+                    #logoImage {
+                        fill: $white;
+                    }
+                }
+                a:hover {
+                    #logoImage {
+                        fill: $color_3;
+                    }
+                }
+            }
+            .links {
+                a {
+                    color: $white;
+                }
+                a:hover {
+                    color: $color_3;
+                }
+            }
+        }
+    }
+    .searchWindow {
+        padding-bottom: 10vh;
+        background-color: $color_1;
+        .handle {
+            .title {
+                margin-bottom: 5vh;
+                text-align: center;
+                h1 {
+                    color: $color_3;
+                    text-shadow: 0.12rem 0.12rem 0 rgba(0, 0, 0, 0.5);
+                    margin-bottom: 3vh;
+                }
+            }
+            .searchForm {
+                padding: 6vh 6vw 2vh 6vw;
+                background-color: $white;
+                border-radius: 0.5rem;
+                box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                h2 {
+                    color: $color_2;
+                    margin-bottom: 5vh;
+                }
+            }
+        }
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+        .photo {
+            width: 50%;
+            height: 35vw;
+        }
+        @media screen and (min-width: $width_pc) { 
+            margin-bottom: 15vh;
+            .photo {
+                width: 25%;
+                height: 20vw;
+            }
+        }
+    }
+    .description_1 {  
+        margin-bottom: 10vh;
+        @media screen and (min-width: $width_pc) {  
+            margin-bottom: 0;
+        }      
+        .handle {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            .image {
+                width: 100%;
+                height: 65vw;                
+            }
+            .textBox {
+                width: 100%;
+                padding: 0 5vw;
+                margin-bottom: 5vh;
+                @media only screen and (min-width: $width_mb) and (max-width: $width_pc) {  
+                    padding: 0 10vw;
+                }
+                .text {
+                    h2 {
+                        color: $color_2;
+                        margin-bottom: 3vh;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: $width_pc) {
+            margin-bottom: 15vh;
+            .handle { 
+                width: 80%;
+                height: 70vh;
+                display: block;
+                position: relative;
+                .image {
+                    width: 70%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    box-shadow: inset 0 0 0.7rem 0.7rem $white;
+                }
+                .textBox {
+                    width: 55%;
+                    // height: 80%;
+                    padding: 10vh 5vw;
+                    background-color: rgba(255,255,255,0.85);
+                    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+                    border-radius: 0.5rem;
+                    position: absolute;
+                    top: 50%;
+                    right: 0%;
+                    transform: translate(-0%, -50%);
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }        
+    }
+    .description_2 {
+        margin-bottom: 12vh;
+        .handle {
+            max-width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            .image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5vh;
+                img {
+                    width: 12rem;
+                }
+            }
+            .textBox {
+                width: 100%;
+                .text {
+                    h2 {
+                        color: $color_2;
+                        margin-bottom: 3vh;
+                    }
+                }
+            }
+            @media screen and (min-width: $width_pc) {
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                .image {
+                    width: 40%;
+                    img {
+                        width: 15rem;
+                    }
+                }
+                .textBox {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+#results {
+    .contentWrapper {
+        background-color: $color_1;
+        min-height: 90vh;
+    }
+    .navigation {
+        margin: 0;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        background-color: $color_1;      
+        .handle {            
+            .logo {
+                a {
+                    #logoImage {
+                        fill: $white;
+                    }
+                }
+                a:hover {
+                    #logoImage {
+                        fill: $color_3;
+                    }                    
+                }
+            }
+            .links {
+                a {
+                    color: $white;
+                }
+                a:hover {
+                    color: $color_3;
+                }
+            }
+        }
+    }
+    section {        
+        .handle {
+            .searchConditions {
+                margin-bottom: 10vh;
+                .searchForm {
+                    padding: 4vh 6vw 2vh 6vw;
+                    background-color: $white;
+                    border-radius: 0.5rem;
+                    box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                    .found {
+                        margin-bottom: 4vh;
+                        h3 {
+                            color: $color_4;
+                        }                    
+                    }                    
+                }                
+            }
+            .searchResult {
+                margin-bottom: 15vh;
+                .propertyList {
+                    .propertyCard {
+                        background-color: $white;
+                        box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                        border-radius: 0.5rem;
+                        margin-bottom: 3vh;
+                        .photoBox {
+                            .photo {
+                                width: 100%;
+                                height: 35vh;
+                                border-radius: 0.5rem 0.5rem 0 0;
+                            }
+                        }
+                        .textBox {
+                            padding: 3vh 6vw 4vh 6vw;
+                            h3 {
+                                color: $color_2;
+                                margin-bottom: 1vh;
+                            }
+                            .review {
+                                margin-top: 1vh;
+                                margin-bottom: 1vh;
+                                display: flex;
+                                flex-wrap: wrap;
+                                .aveRating {
+                                    margin-right: 0.5rem;
+                                    font-weight: 800;
+                                    i {
+                                        color: $color_4;
+                                    }
+                                }
+                            }
+                            .facilities {
+                                margin-bottom: 1vh;                                
+                            }
+                            .price {
+                                display: flex;
+                                flex-wrap: wrap;
+                                margin-bottom: 2vh;
+                                .pricePerNight {
+                                    font-weight: 800;
+                                    font-size: 1.1rem;
+                                    margin-right: 1rem;
+                                }                        
+                            }
+                        }
+                    }
+                    .nodataMsg {
+                        text-align: center;
+                    }
+                }
+            }
+            @media screen and (min-width: 1024px) {  
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .searchConditions {
+                    width: 30%;
+                    .searchForm {
+                        padding: 4vh 2vw 2vh 2vw;
+                        form {
+                            .half,.third {
+                                width: 100%;
+                            } 
+                        }
+                    }
+                }
+                .searchResult {
+                    width: 68%;
+                    .propertyList {
+                        .propertyCard {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            .photoBox {
+                                width: 40%;
+                                .photo {
+                                    width: 100%;
+                                    height: 36vh;
+                                    border-radius: 0.5rem 0 0 0.5rem;
+                                    @media screen and (min-height: 800px) and (min-width: 1441px) {  
+                                        height: 30vh; 
+                                    }                                    
+                                }
+                            }
+                            .textBox {
+                                width: 59%;
+                                padding: 3vh 2vw 3vh 2vw;
+                                .price {
+                                    margin-bottom: 2vh;                           
+                                }
+                                .btn-4:focus { 
+                                    border: 0.1rem outset $color_3;
+                                }
+                            }                            
+                        }
+                    }
+                    .nodataMsg {
+                        margin-top: 4vh;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#details {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .mainInfo {
+        margin-bottom: 2vh;
+        @media screen and (min-width: $width_pc) {  
+            margin-bottom: 5vh;
+        }
+        .handle {
+            .title {
+                margin-bottom: 2vh;
+                h1 {
+                    margin-bottom: 2vh;
+                }
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    a {
+                        text-decoration: none;
+                        .reviewScore {
+                            color: $black;                        
+                            i {
+                                color: $color_4;
+                            }
+                            span {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }                
+            }
+            .photos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .container {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    .photoL {
+                        border-radius: 0.3rem;
+                        width: 100%;
+                        height: 60vw;
+                        margin-bottom: 1vw;
+                    }
+                    .photoS {
+                        border-radius: 0.3rem;
+                        width: 49.5%;
+                        height: 32vw;
+                        margin-bottom: 1vw;
+                    }
+                    @media only screen and (min-width: $width_mb) and (max-width: $width_pc) {  
+                        .photoL {
+                            height: 50vw;
+                        } 
+                        .photoS {
+                            height: 28vw;
+                        }
+                    }  
+                    @media screen and (min-width: $width_pc) {  
+                        width: 49.5%;
+                        .photoL {
+                            height: 35vw;
+                            margin-bottom: 0;
+                        }
+                        .photoS {
+                            width: 49%;
+                            height: 17vw;
+                            margin-bottom: 0;
+                        }
+                    }                  
+                }
+            }
+        }
+    }
+    .detailsContainer {
+        margin-bottom: 10vh;
+        .handle {
+            .detailInfo {
+                margin-bottom: 5vh;
+                .facility {
+                    margin-bottom: 3vh;
+                    h3 {
+                        color: $color_1;
+                        margin-bottom: 1vh;                        
+                    }
+                    .facilityList {                        
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        p {
+                            width: 30%;
+                        }                    
+                    }
+                }
+                .amenities {
+                    margin-bottom: 3vh;
+                    h3 {
+                        color: $color_1;
+                        margin-bottom: 1vh;
+                    }
+                    .amenityList {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        p {
+                            width: 30%;
+                        }
+                        .unavailable {
+                            color: silver;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+                .description {
+                    margin-bottom: 3vh;
+                    h3 {
+                        color: $color_1;
+                        margin-bottom: 1vh;                        
+                    }
+                }
+                .address {
+                    h3 {
+                        color: $color_1;
+                        margin-bottom: 1vh;                        
+                    }
+                }
+            }
+            .reservationForm {  
+                margin-bottom: 5vh;          
+                .container{                                       
+                    padding: 4vh 6vw 2vh 6vw;
+                    background-color: $white;
+                    border-radius: 0.5rem;
+                    border: 0.05rem solid $color_2;
+                    box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);                    
+                    .errorMsg {
+                        margin-bottom: 5vh;
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            color: $color_4;
+                            span {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    .searchForm {
+                        form {
+                            .pricePerNight {
+                                text-align: right;
+                                p {
+                                    font-size: 1.2rem;
+                                    font-weight: bold;
+                                }
+                            }
+                            .priceDetail {
+                                table {
+                                    width: 100%;
+                                    border: none;
+                                    tr {
+                                        td {
+                                            padding: 0.4rem 0;
+                                        }
+                                        .price {
+                                            text-align: right;
+                                        }
+                                    }
+                                    .line {
+                                        border-bottom: 0.1rem solid $black;
+                                    }
+                                    .total {
+                                        td {
+                                            font-size: 1.1rem;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                            @media only screen and (min-width: 961px) and (max-width: 1439px) {  
+                                .half {
+                                    width: 100%;
+                                }
+                                .third {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }             
+                }
+            }           
+        }
+        @media screen and (min-width: $width_pc) {
+            .handle {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .detailInfo {
+                    width: 55%;
+                }
+                .reservationForm {
+                    width: 40%;
+                    .container {
+                        padding: 4vh 2vw 2vh 2vw; 
+                    }
+                }
+            }
+        }         
+    }    
+    .reviews {
+        margin-bottom: 10vh;
+        .handle {
+            .title {
+                margin-bottom: 3vh;
+                h2 {
+                    color: $color_2;
+                }
+            }
+            .summary {
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 3vh;
+                border-bottom: 0.05rem solid $color_2;
+                p {
+                    font-size: 1.3rem;
+                }
+                .star {
+                    font-weight: 800;
+                    margin-right: 1rem;
+                    i {
+                        color: $color_4;
+                    }
+                }
+            }
+            .reviewList {
+                .reviewCard {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    padding: 3vh 0;                    
+                    border-bottom: 0.05rem solid $color_2;               
+                    .star {
+                        width: 3rem;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        i {
+                           color: $color_4; 
+                        }
+                    }
+                    .username {
+                        width: 6rem;
+                    }
+                    .date {
+                        width: auto;
+                        text-align: right;
+                    }
+                    .comment {
+                        width: 100%;
+                        margin-top: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#payment {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .pageTitle {
+        margin-bottom: 5vh;
+    }
+    section {
+        .handle {
+            margin-bottom: 10vh;
+            .container {
+                .tripDetails {
+                    margin-bottom: 7vh;
+                    padding: 4vh 6vw;
+                    background-color: $white;
+                    border-radius: 0.5rem;
+                    border: 0.05rem solid $color_2;
+                    box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                    .heading {
+                        margin-bottom: 4vh;
+                        h2 {
+                            color: $color_1;
+                        }
+                    }
+                    .propertyInfo {
+                        margin-bottom: 4vh;
+                        h3 {
+                            color: $color_2;
+                            margin-bottom: 2vh;
+                        }
+                        .bold {
+                            font-weight: bold;
+                        }
+                        .date {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            margin-bottom: 2vh;
+                            .checkDate {
+                                width: 40%;
+                            }
+                        }
+                    }
+                    .priceDetail {
+                        table {
+                            width: 100%;
+                            border: none;
+                            tr {
+                                td {
+                                    padding: 0.4rem 0;
+                                }
+                                .price {
+                                    text-align: right;
+                                }
+                            }
+                            .line {
+                                border-bottom: 0.1rem solid $black;
+                            }
+                            .total {
+                                td {
+                                    font-size: 1.1rem;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }                         
+                }
+                .paymentDatails {
+                    padding: 4vh 6vw;
+                    background-color: $color_1;
+                    border-radius: 0.5rem;
+                    box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                    .heading {
+                        margin-bottom: 4vh;
+                        h2 {
+                            color: $white;
+                            text-shadow: 0.1rem 0.1rem 0 $color_3;
+                        }
+                    }
+                    .searchForm {
+                        form {
+                            label {
+                                font-weight: bold;
+                            }
+                            .payWith {
+                                color: $white;
+                            }
+                            .spacial {
+                                p {
+                                    font-size: 0.9rem;
+                                    line-height: 1.2rem;
+                                    margin-bottom: 0.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media screen and (min-width: $width_pc) {  
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    .tripDetails {
+                        width: 40%;
+                        padding: 5vh 3vw;
+                    }
+                    .paymentDatails {
+                        width: 57%;
+                        padding: 5vh 3vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#thankyou {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .pageTitle {
+        margin-bottom: 30vh;
+        .handle {
+            h1 {
+                margin-bottom: 5vh;
+            }
+            p {
+                a {
+                    text-decoration: none;
+                    color: $color_1;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                a:hover {
+                    color: $color_3;
+                }
+            }
+        }
+    }
+    section {
+        .handle {
+            .button {
+                text-align: center;
+            }
+        }
+    }
+}
+
+#account {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .pageTitle {
+        margin-bottom: 5vh;
+        .handle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: $color_2;
+                transition: $transition_hover;
+            }
+            a:hover {
+                color: $color_3;
+            }
+        }
+    }
+    .accountInfo {
+        margin-bottom: 7vh;
+        .header {
+            margin-bottom: 3vh;
+            h2 {
+                color: $color_1;
+            }
+        }
+        .information {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .container {
+                width: 45%;
+                margin-bottom: 2vh;
+                .bold {
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                }
+            }
+            @media screen and (min-width: $width_pc) {  
+                justify-content: flex-start;
+                .container {
+                    width: 35%;
+                }
+            }           
+        }
+    }
+    .bookings {
+        margin-bottom: 10vh;
+        .header {
+            margin-bottom: 3vh;
+            h2 {
+                color: $color_1;
+            }
+        }
+        .bookingList {
+            .bookingCard {
+                margin-bottom: 4vh;
+                padding: 5vh 6vw;
+                background-color: $white;
+                border-radius: 0.5rem;
+                border: 0.05rem solid $color_2;
+                box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+                .bold {
+                    font-weight: bold;
+                }
+                h3 {
+                    color: $color_2;
+                    margin-bottom: 3vh;
+                }
+                .photo {
+                    width: 100%;
+                    height: 30vh;
+                    margin-bottom: 3vh;
+                    @media only screen and (min-width: $width_mb) and (max-width: $width_pc) {  
+                        width: 50%;
+                        height: 16vh;
+                    }
+                    @media screen and (min-width: $width_pc) {  
+                        width: 40%;
+                        height: 26vh;
+                    }
+                    @media screen and (min-width: $width_wide) {  
+                        width: 28%;
+                        height: 28vh;
+                    }                     
+                }
+                .details {
+                    margin-bottom: 4vh;
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        // justify-content: space-between;
+                        margin-bottom: 1vh;
+                        .date {
+                            width: 50%;
+                            margin-bottom: 1vh;
+                        }
+                        .guests {
+                            width: 100%;
+                            margin-bottom: 1vh;
+                        }
+                        .price {
+                            width: 50%;
+                            margin-bottom: 1vh;
+                        }                  
+                    }
+                }
+                h4 {
+                    color: $color_1;
+                    margin-bottom: 1vh;
+                }
+                .star {
+                    font-weight: bold;
+                    i {
+                        color: $color_4;
+                    }
+                }
+                @media only screen and (min-width: 760px) {  
+                    .details {
+                        .container {
+                            .date {
+                                width: 33.33%;
+                            }
+                            .guests {
+                                width: 33.33%;
+                            }
+                            .price {
+                                width: 33.33%;
+                            }                  
+                        }
+                    }                    
+                }
+                @media screen and (min-width: 1441px) {  
+                    padding: 5vh 4vw;                     
+                }
+            }
+        }        
+    }    
+}
+
+#writeReview {
+    .contentWrapper {
+        min-height: 90vh;
+    }
+    .pageTitle {
+        margin-bottom: 5vh;
+    }
+    .reviewContainer {
+        margin-bottom: 10vh;
+        .heading {
+            margin-bottom: 5vh;
+            h2 {
+                color: $color_1;
+            }
+        }
+    }
+}

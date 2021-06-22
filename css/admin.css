@@ -1,0 +1,661 @@
+.adminNavigation {
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+  width: 100%;
+  text-align: right;
+}
+
+.adminNavigation a {
+  text-decoration: none;
+  color: #46B4DB;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid;
+  margin-left: 0.8rem;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.adminNavigation a:hover {
+  color: #E8C547;
+}
+
+.adminNavigation .logout {
+  border: none;
+  font-size: 1.6rem;
+}
+
+#loginAdmin {
+  background-color: #46B4DB;
+}
+
+#loginAdmin .contentWrapper {
+  min-height: 90vh;
+}
+
+#loginAdmin header {
+  margin-top: 10vh;
+  margin-bottom: 7vh;
+}
+
+#loginAdmin header .handle {
+  max-width: 700px;
+}
+
+#loginAdmin header .handle h1 {
+  color: #ffffff;
+}
+
+#loginAdmin .loginForm .handle {
+  max-width: 700px;
+}
+
+#loginAdmin .loginForm .handle .alertMsg {
+  margin-bottom: 5vh;
+}
+
+#loginAdmin .loginForm .handle .alertMsg p {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #E8C547;
+  text-shadow: 0.05rem 0.05rem 0.05rem #000000;
+}
+
+#loginAdmin .loginForm form input:focus {
+  border: 2px solid #E8C547;
+  outline: 0;
+}
+
+#loginAdmin .loginForm form input[type="submit"]:focus {
+  border: 0.1rem outset #F26989;
+  outline: 0;
+}
+
+#loginAdmin .loginForm form input[type="submit"]:hover {
+  border: 0.1rem outset #5A9E72;
+  outline: 0;
+}
+
+#loginAdmin .loginForm form .error .errorMsg p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 0px #F26989;
+}
+
+#loginAdmin .loginForm .notice p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#loginAdmin .loginForm .notice p a:hover {
+  color: #E8C547;
+}
+
+#registerAdmin {
+  background-color: #46B4DB;
+}
+
+#registerAdmin .contentWrapper {
+  min-height: 90vh;
+}
+
+#registerAdmin header {
+  margin-top: 10vh;
+  margin-bottom: 7vh;
+}
+
+#registerAdmin header .handle {
+  max-width: 800px;
+}
+
+#registerAdmin header .handle h1 {
+  color: #ffffff;
+}
+
+#registerAdmin .registerForm .handle {
+  max-width: 800px;
+}
+
+#registerAdmin .registerForm .handle .alertMsg {
+  margin-bottom: 5vh;
+}
+
+#registerAdmin .registerForm .handle .alertMsg p {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #E8C547;
+  text-shadow: 0.05rem 0.05rem 0.05rem #000000;
+}
+
+#registerAdmin .registerForm form input:focus {
+  border: 2px solid #E8C547;
+  outline: 0;
+}
+
+#registerAdmin .registerForm form input[type="submit"]:focus {
+  border: 0.1rem outset #F26989;
+  outline: 0;
+}
+
+#registerAdmin .registerForm form input[type="submit"]:hover {
+  border: 0.1rem outset #5A9E72;
+  outline: 0;
+}
+
+#registerAdmin .registerForm form .error .errorMsg p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 0px #F26989;
+}
+
+#registerAdmin .registerForm .notice p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+#registerAdmin .registerForm .notice p a:hover {
+  color: #E8C547;
+}
+
+table {
+  border: 0.05rem solid #5A9E72;
+}
+
+table .tableHeader {
+  background-color: #5A9E72;
+  border: 0.05rem solid #ffffff;
+  padding: .5rem 1rem;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+table .tableData {
+  border: 0.05rem solid #5A9E72;
+  padding: .6rem 1rem;
+  text-align: center;
+  vertical-align: center;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+table .colored {
+  color: #F26989;
+}
+
+table .cutText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 20rem;
+  max-width: 0;
+}
+
+#dashboard .contentWrapper {
+  min-height: 90vh;
+}
+
+#dashboard .pageTitle {
+  margin-bottom: 5vh;
+}
+
+#dashboard .handle {
+  width: 95%;
+  max-width: 5000px;
+}
+
+#dashboard .reservationList .searchForm {
+  margin-bottom: 3vh;
+}
+
+#dashboard .reservationList .searchForm .heading {
+  margin-bottom: 3vh;
+}
+
+#dashboard .reservationList .searchForm .heading h3 {
+  color: #46B4DB;
+}
+
+#dashboard .reservationList .searchForm form .submit {
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#dashboard .reservationList .instruction {
+  margin-bottom: 3vh;
+}
+
+#dashboard .reservationList .instruction h3 {
+  color: #46B4DB;
+}
+
+#dashboard .reservationList .listTable {
+  margin-bottom: 10vh;
+}
+
+#dashboard footer .footerBar {
+  background-color: #ffffff;
+}
+
+#dashboard footer .footerBar .handle .goPageTop a {
+  color: #5A9E72;
+}
+
+#dashboard footer .footerBar .handle .goPageTop a:hover {
+  color: #E8C547;
+}
+
+#dashboard footer .footerBar .handle .container .logo svg {
+  fill: #46B4DB;
+}
+
+#dashboard footer .footerBar .handle .container .info {
+  color: #46B4DB;
+}
+
+#properties .contentWrapper {
+  min-height: 90vh;
+}
+
+#properties .pageTitle {
+  margin-bottom: 5vh;
+}
+
+#properties .addButton {
+  margin-bottom: 5vh;
+}
+
+#properties .propertyList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+#properties .propertyList .propertyCard {
+  width: 49%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  margin-bottom: 3vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#properties .propertyList .propertyCard .photoBox {
+  width: 38%;
+}
+
+#properties .propertyList .propertyCard .photoBox .photo {
+  width: 100%;
+  height: 28vw;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+@media screen and (min-width: 1439px) {
+  #properties .propertyList .propertyCard .photoBox .photo {
+    height: 19vw;
+  }
+}
+
+@media screen and (min-width: 1681px) {
+  #properties .propertyList .propertyCard .photoBox .photo {
+    height: 14vw;
+  }
+}
+
+#properties .propertyList .propertyCard .textBox {
+  width: 61%;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+#properties .propertyList .propertyCard .textBox h3 {
+  color: #5A9E72;
+  margin-bottom: 1vh;
+}
+
+#properties .propertyList .propertyCard .textBox .review {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+#properties .propertyList .propertyCard .textBox .review .aveRating {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#properties .propertyList .propertyCard .textBox .review .aveRating i {
+  color: #F26989;
+}
+
+#properties .propertyList .propertyCard .textBox .price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+#properties .propertyList .propertyCard .textBox .price p {
+  font-weight: bold;
+}
+
+#properties .propertyList .propertyCard .textBox .btn-4:focus {
+  border: 0.1rem outset #E8C547;
+}
+
+#properties .propertyList .nodataMsg {
+  text-align: center;
+  margin-top: 4vh;
+}
+
+#detailsAdmin .contentWrapper {
+  min-height: 90vh;
+}
+
+#detailsAdmin .backButton {
+  margin-bottom: 3vh;
+}
+
+#detailsAdmin .mainInfo {
+  margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 960px) {
+  #detailsAdmin .mainInfo {
+    margin-bottom: 5vh;
+  }
+}
+
+#detailsAdmin .mainInfo .handle .title {
+  margin-bottom: 2vh;
+}
+
+#detailsAdmin .mainInfo .handle .title h1 {
+  margin-bottom: 2vh;
+}
+
+#detailsAdmin .mainInfo .handle .title .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#detailsAdmin .mainInfo .handle .title .container .reviewScore {
+  color: #000000;
+}
+
+#detailsAdmin .mainInfo .handle .title .container .reviewScore i {
+  color: #F26989;
+}
+
+#detailsAdmin .mainInfo .handle .title .container .reviewScore span {
+  font-weight: bold;
+}
+
+#detailsAdmin .mainInfo .handle .photos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#detailsAdmin .mainInfo .handle .photos .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+}
+
+#detailsAdmin .mainInfo .handle .photos .container .photoL {
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 60vw;
+  margin-bottom: 1vw;
+}
+
+#detailsAdmin .mainInfo .handle .photos .container .photoS {
+  border-radius: 0.3rem;
+  width: 49.5%;
+  height: 32vw;
+  margin-bottom: 1vw;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  #detailsAdmin .mainInfo .handle .photos .container .photoL {
+    height: 50vw;
+  }
+  #detailsAdmin .mainInfo .handle .photos .container .photoS {
+    height: 28vw;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #detailsAdmin .mainInfo .handle .photos .container {
+    width: 49.5%;
+  }
+  #detailsAdmin .mainInfo .handle .photos .container .photoL {
+    height: 35vw;
+    margin-bottom: 0;
+  }
+  #detailsAdmin .mainInfo .handle .photos .container .photoS {
+    width: 49%;
+    height: 17vw;
+    margin-bottom: 0;
+  }
+}
+
+#detailsAdmin .detailsContainer {
+  margin-bottom: 10vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo {
+  margin-bottom: 5vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .facility {
+  margin-bottom: 3vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .facility h3 {
+  color: #46B4DB;
+  margin-bottom: 1vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .facility .facilityList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .facility .facilityList p {
+  width: 30%;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .amenities {
+  margin-bottom: 3vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .amenities h3 {
+  color: #46B4DB;
+  margin-bottom: 1vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .amenities .amenityList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .amenities .amenityList p {
+  width: 30%;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .amenities .amenityList .unavailable {
+  color: silver;
+  text-decoration: line-through;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .description {
+  margin-bottom: 3vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .description h3 {
+  color: #46B4DB;
+  margin-bottom: 1vh;
+}
+
+#detailsAdmin .detailsContainer .handle .detailInfo .address h3 {
+  color: #46B4DB;
+  margin-bottom: 1vh;
+}
+
+#addProperty .pageTitle {
+  margin-bottom: 5vh;
+}
+
+#addProperty .addPropertyForm {
+  margin-bottom: 10vh;
+}
+
+#addProperty .addPropertyForm form .alertMsg {
+  margin-top: 3vh;
+}
+
+#addProperty .addPropertyForm form .alertMsg p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #F26989;
+}
+
+#propertyTypes .contentWrapper {
+  min-height: 90vh;
+}
+
+#propertyTypes .pageTitle {
+  margin-bottom: 5vh;
+}
+
+#propertyTypes .addButton {
+  margin-bottom: 3vh;
+}
+
+#addType .contentWrapper {
+  min-height: 90vh;
+}
+
+#addType .pageTitle {
+  margin-bottom: 5vh;
+}
+
+#addType form .submit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,463 @@
+//This file contains the CSS styles for the elements common to all pages.
+
+@import "variables"; //refer to "_variables.scss" file
+
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: $font_1;
+    font-size: $fontSize_mb; 
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body { // for sticky footer
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contentWrapper { // for sticky footer
+    margin-bottom: auto;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 { 
+    font-family: $font_2; 
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: $fontSize_h1; 
+    margin-bottom: $marginBottom_h1;
+    color: $color_2;
+}
+
+h2 { 
+    font-size: $fontSize_h2; 
+    margin-bottom: $marginBottom_h2; 
+    line-height: 2.1rem;   
+}
+
+h3 { 
+    font-size: $fontSize_h3; 
+    margin-bottom: $marginBottom_h3;
+}
+
+h4 { 
+    font-size: $fontSize_h4; 
+    margin-bottom: $marginBottom_h4;
+}
+
+h5 { 
+    font-size: $fontSize_h5; 
+    margin-bottom: $marginBottom_h5;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.handle {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+@media screen and (max-width: $width_mb) {  
+	.hide-s { display: none!important; }
+}
+
+@media only screen and (min-width: $width_mb) and (max-width: $width_pc) {  
+    .hide-m { display: none!important; }
+    .handle { width: 80%; } 
+}
+
+@media screen and (min-width: $width_pc) {  
+    .hide-l { display: none!important; }
+    .handle { width: 80%; } 
+}
+
+@media screen and (min-width: 601px) { 
+	html { font-size: $fontSize_pc; } 
+}
+
+@media only screen and (max-height: 800px) and (max-width: 1100px) {  
+	html { font-size: $fontSize_mb; } 
+}
+
+@media screen and (max-width: 360px) { 
+	html { font-size: $fontSize_min; } 
+}
+
+
+[class*="btn-"] {
+	text-decoration: none;
+    outline: none;
+    border-style: none;
+    display: inline-block;
+    font-family: $font_2;
+	font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 0.5rem 1.2rem;
+	color: $white;
+	transition: $transition_hover;     
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-1 { 
+    background-color: $color_4; 
+    border: 0.1rem outset $color_4;
+}
+.btn-1:hover { 
+    background-color: $color_2; 
+    border: 0.1rem outset $color_2;
+}
+.btn-1:active { 
+    background-color: $color_2; 
+    border: 0.1rem inset $color_2;
+}
+.btn-2 { 
+    background-color: $color_1; 
+    border: 0.1rem outset $color_1;
+}
+.btn-2:hover { 
+    background-color: $color_3; 
+    border: 0.1rem outset $color_3;
+}
+.btn-2:active { 
+    background-color: $color_3; 
+    border: 0.1rem inset $color_3;
+}
+.btn-3 { 
+    background-color: $color_1;
+    border: 0.05rem outset $color_1;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.btn-3:hover { 
+    background-color: $color_3; 
+    border: 0.05rem inset $color_3;
+}
+.btn-3:active { 
+    background-color: $color_3; 
+    border: 0.1rem inset $color_3;
+}
+.btn-4 { 
+    font-size: 1rem;
+    padding: 0.45rem 1.1rem;
+    background-color: $color_3; 
+    border: 0.1rem outset $color_3;
+}
+.btn-4:hover { 
+    background-color: $color_2; 
+    border: 0.1rem outset $color_2;
+}
+.btn-4:active { 
+    background-color: $color_2; 
+    border: 0.1rem inset $color_2;
+}
+
+form {
+    label {
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+    span {
+        color: $color_6;
+    }
+    .fieldset {
+        margin-bottom: 3vh;
+        width: 100%;
+    }
+    input {
+        vertical-align: middle;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="time"], input[type="url"], input[type="number"], select, textarea {
+        display: block;
+        width: 100%;
+        border: 0.02rem solid $color_2;
+        border-radius: 0.3rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 1rem;
+        font-family: $font_1;
+    }
+    input[type="radio"] {
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    .option {
+        margin-bottom: 0.8rem;
+    }
+    select { 
+        cursor: pointer;
+    }
+    textarea {
+        line-height: 1.4rem;	
+        max-height: 15vh;
+        min-height: 15vh;
+        max-width: 100%;
+        min-width: 100%; 
+    }
+    input:focus {
+        border: 2px solid $color_3;
+        outline: 0;
+    }
+    input[type="submit"]:focus {
+        border: 0.1rem outset $color_4;
+        outline: 0;
+    }
+    input[type="submit"]:hover {
+        border: 0.1rem outset $color_2;
+        outline: 0;
+    }
+    select:focus {
+        border: 2px solid $color_3;
+        outline: 0;
+    }
+    textarea:focus {
+        border: 2px solid $color_3;
+        outline: 0;
+    }
+    .submit {
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .error {
+        .errorMsg {
+            display: block;
+            color: $color_4;
+            margin-top: 0.8vh;
+        }
+        input[type="text"] {
+            border: 3px solid $color_4;
+        }
+        input[type="email"] {
+            border: 3px solid $color_4;
+        }
+        input[type="password"] {
+            border: 3px solid $color_4;
+        }
+        input[type="date"] {
+            border: 3px solid $color_4;
+        }
+        input[type="time"] {
+            border: 3px solid $color_4;
+        }
+        input[type="url"] {
+            border: 3px solid $color_4;
+        }
+        input[type="number"] {
+            border: 3px solid $color_4;
+        }
+        select {
+            border: 3px solid $color_4;
+        }
+        textarea {
+            border: 3px solid $color_4;
+        }    
+    }
+    .errorMsg {
+        display: none;
+    }
+    .unmatched {
+        background-color: $color_4;
+    }
+    input[type="date"]:read-only {
+        opacity: 0.5;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    .noArrows::-webkit-outer-spin-button,
+    .noArrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    /* Firefox */
+    .noArrows[type=number] {
+    -moz-appearance: textfield;
+    }
+    .searchForm {
+        .fieldset {
+            #checkOut:focus {
+                border: 0.02rem solid $color_2;
+            }
+        }
+    }
+    .dateError {
+        .dateErrorMsg {
+            display: block;
+            color: $color_4;
+            margin-top: 0.8vh;
+        }
+        input[type="date"] {
+            border: 2px solid $color_4;
+        }        
+    }
+    .dateErrorMsg {
+        display: none;
+    }
+
+    @media only screen and (min-width: 650px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .half {
+            width: 49%;
+        }
+        .third {
+            width: 32%;
+        }
+        .radioOptions {
+            display: flex;
+        }
+        .option {
+            display: inline-block;
+            width: 33.33%;
+            margin-bottom: 0;
+        }	
+    }
+}
+
+.navigation {
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    .handle { 
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            a {
+                text-decoration: none;
+                #logoImage {
+                    width: 3.5rem;
+                    fill: $color_1;
+                    transition: $transition_hover;
+                }
+            }
+            a:hover {
+                #logoImage {
+                    fill: $color_3;
+                }
+            }
+        }
+        .links {
+            a {
+                font-size: 2rem;
+                color: $color_2;
+                text-decoration: none;
+                transition: $transition_hover;
+                margin-left: 0.7rem;
+            }
+            a:hover {
+                color: $color_3;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    .footerBar {
+        background-color: $color_2;
+        padding-top: 2vh;
+        padding-bottom: 5vh;
+        .handle {
+            .goPageTop {
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    transition: $transition_hover;
+                }
+                a:hover {
+                    color: $color_3;
+                }
+            }
+            .container {
+                .logo {
+                    text-align: center;
+                    margin-bottom: 5vh;
+                    svg {
+                        width: 12rem;
+                        fill: $white;
+                    }
+                }
+                .info {
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    .box {
+                        h4 {
+                            font-size: 1rem;
+                            margin-bottom: 1vh;
+                        }
+                        p {
+                            font-size: 0.9rem;
+                            line-height: 1.2rem
+                        }
+                    }
+
+                }
+                @media only screen and (min-width: $width_mb) and (max-width: $width_pc) {  
+                    .logo {
+                        margin-bottom: 3vh;
+                        svg {
+                            width: 15rem;
+                        }
+                    }
+                    .info {
+                        .box {
+                            h4 {
+                                font-size: 1.1rem;
+                                margin-bottom: 1vh;
+                            }
+                            p {
+                                font-size: 1rem;
+                                line-height: 1.5rem
+                            }
+                        }
+
+                    }
+                }
+                @media only screen and (min-width: $width_pc) {  
+                    .logo {
+                        margin-bottom: 4vh;
+                        svg {
+                            width: 20rem;
+                        }
+                    }
+                    .info {
+                        .box {
+                            h4 {
+                                font-size: 1.2rem;
+                                margin-bottom: 1vh;
+                            }
+                            p {
+                                font-size: 1rem;
+                                line-height: 1.5rem
+                            }
+                        }
+
+                    }
+                }                  
+            }
+        }
+    }
+}
+
+
+
